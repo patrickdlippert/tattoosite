@@ -1,32 +1,38 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-color: black; }
 
 h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+  font-family: "Audiowide"; 
+  color: rgb(86, 105, 134);  
+}
 
-h2 {
-  color: #3046C5; }
 
-header h2 {
-  color: #CEC8FF; }
+.card-body {
+  background-color: rgb(86, 105, 134); }
 
-.site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0; }
-
-.jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-  color: white; }
+.navbar {  
+  background-image: linear-gradient(to right, white, rgb(86, 105, 134)); 
+}
 
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px; }
 
-.navbar {
-  background-color: #901CAD; }
+.row-noseparator {
+  padding: 50px 0 0 0;
+  min-height: 200px; }
+
+
+.logo-rectangular {
+  max-height: 150px;
+}
+
+.logo-square {
+  max-height: 200px;
+}
+
 
 /* This style is only needed if tabs are used in the aboutus.html page */
 .tab-content {
@@ -43,9 +49,11 @@ a, a:hover {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
 
-/* Color applied to image carousel border, also found in jumbotron */
+/* White rounded border applied to carousel*/
 .carousel {
-  border: solid #5637DD; }
+  border: solid white;
+  border-radius: 5px 5px 5px 5px;
+ }
 
 /* Custom style for red pause/play buttons in carousel */
 #carouselButton {
@@ -53,4 +61,4 @@ a, a:hover {
   right: 0;
   bottom: 0;
   z-index: 100;
-  /* Guarantees buttons are on top of images */ }
+}

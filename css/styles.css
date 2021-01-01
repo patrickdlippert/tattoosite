@@ -68,8 +68,7 @@ a, a:hover {
   z-index: 100;
 }
 
-
-
+/* Extra space between radio button labels */
 .form-check-inline label {
-  margin-right: 1px;
+  margin-right: 10px;
 }

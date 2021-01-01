@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+
+    <title>Bad Panda Tattoo</title>
+</head>
+
+<body>
+
+    <header class="header clear" role="banner">
+        <!-- Navigation bar that contains logo and navigation links -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/BadPandaRectLogo.png" alt="" class="logo-rectangular img-fluid" >
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artists.html">Artists</a>
+                        </li>
+                        <li class="nav-item active" href="#">
+                            <a class="nav-link" href="#">Matcher
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+    
+    <div class="container">
+
+        <!-- This row has a description area above the artist profiles -->
+        <div class="row row-noseparator align-items-center">
+            <div class="col">
+                <h3>Get matched to an artist</h3>
+                <p class="text-light">Complete the questionnaire below, and we'll match you to an artist who'll deliver an exceptional tattoo!
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="container-fluid">
+                <form class="p-sm-5">
+
+                    <!-- Number of Tattoos radio button selection group -->
+                    <div class="form-group row">
+                        <label for="numTattoos" class="col-sm-6 col-form-label">How many tattoos do you currently have?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="numTattoos" id="numTattoos0" value="0" checked>
+                            <label class="form-check-label" for="numTattoos0">None</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="numTattoos" id="numTattoos1" value="1">
+                            <label class="form-check-label" for="numTattoos1">1-2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="numTattoos" id="numTattoos3" value="3">
+                            <label class="form-check-label" for="numTattoos3">3-4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="numTattoos" id="numTattoos5" value="5">
+                            <label class="form-check-label" for="numTattoos5">5-9</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="numTattoos" id="numTattoos10" value="3">
+                            <label class="form-check-label" for="numTattoos10">10+</label>
+                        </div>
+                    </div>
+
+                    <!-- Pain Threshold radio button selection group -->
+                    <div class="form-group row">
+                        <label for="numTattoos" class="col-sm-6 col-form-label">What is your pain threshold?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="painThreshold" id="painLevel0" value="0">
+                            <label class="form-check-label" for="painLevel0">Very Low</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="painThreshold" id="painLevel1" value="1">
+                            <label class="form-check-label" for="painLevel1">Low</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="painThreshold" id="painLevel2" value="2" checked>
+                            <label class="form-check-label" for="painLevel2">Moderate</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="painThreshold" id="painLevel3" value="3">
+                            <label class="form-check-label" for="painLevel3">High</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="painThreshold" id="painLevel4" value="4">
+                            <label class="form-check-label" for="painLevel4">Very High</label>
+                        </div>
+                    </div>
+
+
+                    <!-- Age radio button selection group -->
+                    <div class="form-group row">
+                        <label for="overFifty" class="col-sm-6 col-form-label">Are you over age 50?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="overFifty" id="overYes" value="1">
+                            <label class="form-check-label" for="overYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="overFifty" id="overNo" value="0" checked>
+                            <label class="form-check-label" for="overNo">No</label>
+                        </div>
+                    </div>
+
+                    <!-- Cover up radio button selection group -->
+                    <div class="form-group row">
+                        <label for="isCoverUp" class="col-sm-6 col-form-label">Is your new tattoo a cover up?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isCoverUp" id="isCoverYes" value="1">
+                            <label class="form-check-label" for="isCoverYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isCoverUp" id="isCoverNo" value="0" checked>
+                            <label class="form-check-label" for="isCoverNo">No</label>
+                        </div>
+                    </div>
+
+                    <!-- Add on radio button selection group -->
+                    <div class="form-group row">
+                        <label for="isExtension" class="col-sm-6 col-form-label">Is your new tattoo an extension of an existing tattoo?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isExtension" id="isExtensionYes" value="1">
+                            <label class="form-check-label" for="isExtensionYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isExtension" id="isExtensionNo" value="0" checked>
+                            <label class="form-check-label" for="isExtensionNo">No</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Clear Idea radio button selection group -->
+                    <div class="form-group row">
+                        <label for="isClearIdea" class="col-sm-6 col-form-label">I have a very clear idea of what I want</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isClearIdea" id="isClearYes" value="1" checked>
+                            <label class="form-check-label" for="isClearYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isClearIdea" id="isClearNo" value="0">
+                            <label class="form-check-label" for="isClearNo">No</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Open to artist radio button selection group -->
+                    <div class="form-group row">
+                        <label for="isClearIdea" class="col-sm-6 col-form-label">I'm open to an artist's interpretation</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isOpenToArtist" id="isOpen" value="1" checked>
+                            <label class="form-check-label" for="isOpen">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isOpenToArtist" id="notOpen" value="0">
+                            <label class="form-check-label" for="notOpen">No</label>
+                        </div>
+                    </div>
+
+                    <!-- Color or black & gray radio button selection group -->
+                    <div class="form-group row">
+                        <label for="isColor" class="col-sm-6 col-form-label">Will your new tattoo be in color or black & gray?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isColor" id="colorYes" value="1" checked>
+                            <label class="form-check-label" for="colorYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="isColor" id="colorNo" value="0">
+                            <label class="form-check-label" for="colorNo">No</label>
+                        </div>
+                    </div>
+
+                    <!-- Select the size of the tattoo in form -->
+                    <div class="form-group row">
+                        <label for="sizeTattoo" class="col-sm-6 col-form-label">What size will your new tattoo be?</label>
+                        <div class="col">
+                            <select  class="form-control" id="sizeTattoo" name="sizeTattoo">
+                                <option>Select...</option>
+                                <option value="1">Extra small (single image less than 1" x 1")</option>
+                                <option value="2">Small (single image less than 2" x 2")</option>
+                                <option value="3">Medium (single image less than 6" x 6")</option>
+                                <option value="4">Large (full sleeve or long placement)</option>
+                                <option value="5">Extra Large (full back, chest or leg)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Select the location of the tattoo in form -->
+                    <div class="form-group row">
+                        <label for="sizeTattoo" class="col-sm-6 col-form-label">Where will your new tattoo be located?</label>
+                        <div class="col">
+                            <select  class="form-control" id="sizeTattoo" name="sizeTattoo">
+                                <option>Select...</option>
+                                <option value="wrist">Wrist</option>
+                                <option value="forearm">Forearm</option>
+                                <option value="bicep">Bicep</option>
+                                <option value="hand">Hand</option>
+                                <option value="calf">Calf</option>
+                                <option value="thigh">Thigh</option>
+                                <option value="ankle">Ankle</option>
+                                <option value="neck">Neck</option>
+                                <option value="shoulder">Shoulder</option>
+                                <option value="torso">Torso</option>
+                                <option value="ribs">Ribs</option>
+                                <option value="back">Back</option>
+                                <option value="head">Head</option>
+                                <option value="face">Face</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select the theme of the tattoo in form -->
+                    <div class="form-group row">
+                        <label for="themeTattoo" class="col-sm-6 col-form-label">What is the theme of your new tattoo?</label>
+                        <div class="col">
+                            <select  class="form-control" id="themeTattoo" name="themeTattoo">
+                                <option>Select...</option>
+                                <option value="words">Written words</option>
+                                <option value="landscape">Landscapes</option>
+                                <option value="pet">Pets</option>
+                                <option value="wildlife">Wildlife</option>
+                                <option value="portrait">Portrait</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="horror">Horror</option>
+                                <option value="gothic">Gothic</option>
+                                <option value="nautical">Nautical</option>
+                                <option value="pinup">Pin-up</option>
+                                <option value="military">Military</option>
+                                <option value="automotive">Automotive/Motorcycle</option>
+                                <option value="music">Musical</option>
+                                <option value="history">History</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select the style of the tattoo in form -->
+                    <div class="form-group row">
+                        <label for="styleTattoo" class="col-sm-6 col-form-label">What style will your new tattoo be done in?</label>
+                        <div class="col">
+                            <select  class="form-control" id="styleTattoo" name="styleTattoo">
+                                <option>Select...</option>
+                                <option value="americantraditional">American Traditional</option>
+                                <option value="neotraditional">Neo Traditional</option>
+                                <option value="newschool">New School</option>
+                                <option value="japanese">Japanese</option>
+                                <option value="realism">Photo Realism</option>
+                                <option value="tribal">Tribal/Blackwork</option>
+                                <option value="biomechanical">Biomechanical</option>
+                                <option value="geometric">Geometric</option>
+                                <option value="trashpolka">Trash Polka</option>
+                                <option value="surrealism">Surrealism</option>
+                                <option value="watercolor">Watercolor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Select a desired appointment date in the modal reservation form -->
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-6 col-form-label">Desired appointment date</label>
+                        <div class="col-sm-6">
+                            <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
+                        </div>
+                    </div>
+
+
+                    <!-- Cancel/Search buttons at bottom of modal form -->
+                    <div class="form-group row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-danger">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer section that uses Logo, Menu, Contact and Social Buttons -->
+    <div class="pb-0 mb-0 justify-content-center text-light">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                            
+                        <div class="col-xl-6 col-md-4 col-sm-4 col-12  mx-auto">
+                            <img src="img/BadPandaSquareLogo.png" class="logo-square">
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="artists.html">Artists</a></li>
+                                <li><a href="#">Matcher</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                            
+                        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>CONTACT</b></h6>
+                            <p class="mb-1"><strong>Bad Panda Tattoo Co.</strong></p>
+                            <p class="mb-1">555 Harbor View St</p>
+                            <p>Tacoma, WA 98402 </p>
+
+                            <p>Sun – Sat: 12noon – 9pm</p>
+                            <p><a href="mailto:badpandatattoo@gmail.com">badpandatattoo@gmail.com</a></p>
+                            <p><a href="tel:+12535551000">(253) 555-1000</a></p> 
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> 
+                                <a class="mx-3" href="http://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a class="mx-3" href="http://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a class="mx-3" href="http://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="mx-3" href="http://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </p>
+                            <small class="rights"><span>&#174;</span> Bad Panda All Rights Reserved.</small>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

@@ -7,6 +7,11 @@ h1, h2, h3 {
   color: rgb(86, 105, 134);  
 }
 
+/* Mid-point of gradient from white to denim */
+form { 
+   background-color: rgb(172, 181, 195);
+   border-radius: 5px;
+ }
 
 .card-body {
   background-color: rgb(86, 105, 134); }
@@ -52,7 +57,7 @@ a, a:hover {
 /* White rounded border applied to carousel*/
 .carousel {
   border: solid white;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
  }
 
 /* Custom style for red pause/play buttons in carousel */
@@ -61,4 +66,10 @@ a, a:hover {
   right: 0;
   bottom: 0;
   z-index: 100;
+}
+
+
+
+.form-check-inline label {
+  margin-right: 1px;
 }

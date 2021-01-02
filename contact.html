@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href= "css/contactstyles.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+
+    <title>Bad Panda Tattoo</title>
+</head>
+<body>
+
+    <header class="header clear" role="banner">
+        <!-- Navigation bar that contains logo and navigation links -->
+        <!--Wanted to use the same header and Navbar for consistency. Plus it looks good!-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/BadPandaRectLogo.png" alt="" class="logo-rectangular img-fluid" >
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Matcher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+    <div class="container">
+        <!-- This row has a description area above the artist profiles -->
+        <div class="row row-noseparator align-items-center">
+            <div class="col">
+                <h3>Contact Us</h3>
+                <p class="text-light">Please fill out the form below and we will contact you ASAP.
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="container col-sm-8">
+                <form class="p-sm-5" id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">First name *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Last name *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Please specify your need *</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                        <option value="">Select from Menu </option>
+                                        <option value="Request a quote">Request A quote</option>
+                                        <option value="Book appointment">Book Appointment</option>
+                                        <option value="Book consultation">Book Consultation</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Write us a brief message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-danger btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col map embed embed-responsive m-xs-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6817.827896339367!2d-122.43193962767666!3d47.30150435738939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1609534925710!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Footer section that uses logo,menu,contact, social buttons-->
+    <div class="pb-0 mb-0 justify-content-center text-light">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        
+                        <div class="col-xl-6 col-md-4 col-sm-4 col-12  mx-auto">
+                            <img src="img/BadPandaSquareLogo.png" class="logo-square">
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="artists.html">Artists</a></li>
+                                <li><a href="matcher.html">Matcher</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>CONTACT</b></h6>
+                            <p class="mb-1"><strong>Bad Panda Tattoo Co.</strong></p>
+                            <p class="mb-1">555 Harbor View St</p>
+                            <p>Tacoma, WA 98402 </p>
+
+                            <p>Sun – Sat: 12noon – 9pm</p>
+                            <p><a href="mailto:badpandatattoo@gmail.com">badpandatattoo@gmail.com</a></p>
+                            <p><a href="tel:+12535551000">(253) 555-1000</a></p> 
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> 
+                                <a class="mx-3" href="http://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a class="mx-3" href="http://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a class="mx-3" href="http://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="mx-3" href="http://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </p>
+                            <small class="rights"><span>&#174;</span> Bad Panda All Rights Reserved.</small>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+</div>
+
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+
+</body>
+</html>

@@ -1,12 +1,13 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: black; }
+    background-color: black;
+  }
   
   h1, h2, h3 {
     font-family: "Audiowide"; 
     color: rgb(86, 105, 134);  
   }
-  .card{
+  .card-header{
       background-color: black;
       text-color: rgb(86, 105, 134); 
   }
@@ -20,6 +21,10 @@ body {
   
   .navbar {  
     background-image: linear-gradient(to right, white, rgb(86, 105, 134)); 
+  }
+  /* at certain viewports the toggle button wasn't visible. This darkened it up so you can see it*/
+  .navbar-toggler{
+    background-color: rgb(86, 105, 134);;
   }
   
   .row-content {
@@ -60,6 +65,7 @@ body {
   .carousel {
     border: solid white;
     border-radius: 5px 5px 5px 5px;
+
    }
   
   /* Custom style for red pause/play buttons in carousel */

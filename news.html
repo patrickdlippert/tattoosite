@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yellowtail" />
+   
 
     <title>Bad Panda Tattoo</title>
 </head>
@@ -91,18 +92,46 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col order-2">
-                    <h1>Calendar</h1>
+                    <h1 class="pb-4">Calendar</h1>
                 </div>
-                <div class="col-6">
-                    <h1> News</h1>
+                <div class="col-5">
+                    <h1 class=""> News</h1>
+                     <!-- Working on how to get a scrolling section for the news that is responsive-->
+                
                 </div>
-                <div class="col order-3">
-                    <h1>Testimonials</h1>
+                <div class="col-2 order-3">
+                    <h1 class="pb-4">Reviews</h1>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/img/totaltattoothumbnail.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">"One of Tacoma's finest"</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>1
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/inkedlogothumbnail.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">"Outstanding Quality"</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/img/tattoosocietythumbnail.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">"Top Ten In Washington"</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <!-- This one was only meant as a joke-->
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/img/chadtestimonial.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">"Denny's Night Manager Approved"</h5>
+                                  <p class="card-text">Yo, Panda straight up is the sickest artist in the whole area. Once I get my tips from work. I look forward to having the sickest back dragon ever!</p>
+                            </div>
+                        </div>           
+                    </div>
                 </div>
             </div>
         </div>
-
-
+    </div>
         <!-- Footer section that uses Logo, Menu, Contact and Social Buttons -->
         <div class="pb-0 mb-0 justify-content-center text-light">
             <footer>
@@ -164,6 +193,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- endbuild -->
 
 </body>

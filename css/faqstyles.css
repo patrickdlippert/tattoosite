@@ -7,6 +7,14 @@ body {
     font-family: "Audiowide"; 
     color: rgb(86, 105, 134);  
   }
+
+  header h2 {
+    font-family: "Yellowtail", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color:#d9534f 
+  }
+  
   .card-header{
       background-color: black;
       text-color: rgb(86, 105, 134); 
@@ -19,9 +27,11 @@ body {
  }
   
   
-  .navbar {  
-    background-image: linear-gradient(to right, white, rgb(86, 105, 134)); 
-  }
+ .navbar {  
+  /* background-image: linear-gradient(to right, white, rgb(86, 105, 134)); */ 
+  background-color: rgb(86, 105, 134);  
+}
+
   /* at certain viewports the toggle button wasn't visible. This darkened it up so you can see it*/
   .navbar-toggler{
     background-color: rgb(86, 105, 134);;
@@ -38,12 +48,20 @@ body {
   
   
   .logo-rectangular {
-    max-height: 150px;
+    max-height: 100px;
   }
   
   .logo-square {
     max-height: 200px;
   }
+  
+  .jumbotron {
+    margin: 0;
+    padding: 10px;
+    background-image: linear-gradient(to right, white, rgb(86, 105, 134)); 
+    color: white;
+  }
+  
   
   
   /* This style is only needed if tabs are used in the aboutus.html page */
@@ -64,7 +82,7 @@ body {
   /* White rounded border applied to carousel*/
   .carousel {
     border: solid white;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
 
    }
   

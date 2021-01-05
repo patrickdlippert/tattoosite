@@ -7,17 +7,29 @@ h1, h2, h3 {
   color: rgb(86, 105, 134);  
 }
 
+header h2 {
+  font-family: "Yellowtail", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color:#d9534f 
+}
+
 /* Mid-point of gradient from white to denim */
 form { 
-   background-color: rgb(172, 181, 195);
-   border-radius: 5px;
- }
+  background-color: rgb(172, 181, 195);
+  border-radius: 5px;
+}
+
+.subheader{
+  text-align: center;
+}
 
 .card-body {
   background-color: rgb(86, 105, 134); }
 
 .navbar {  
-  background-image: linear-gradient(to right, white, rgb(86, 105, 134)); 
+  /* background-image: linear-gradient(to right, white, rgb(86, 105, 134)); */ 
+  background-color: rgb(86, 105, 134);  
 }
 
 .row-content {
@@ -31,13 +43,19 @@ form {
 
 
 .logo-rectangular {
-  max-height: 150px;
+  max-height: 100px;
 }
 
 .logo-square {
   max-height: 200px;
 }
 
+.jumbotron {
+  margin: 0;
+  padding: 10px;
+  background-image: linear-gradient(to right, white, rgb(86, 105, 134)); 
+  color: white;
+}
 
 /* This style is only needed if tabs are used in the aboutus.html page */
 .tab-content {

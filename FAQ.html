@@ -17,57 +17,66 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yellowtail" />
 
     <title>Bad Panda Tattoo</title>
 </head>
 
 <body>
-
-    <header class="header clear" role="banner">
-        <!-- Navigation bar that contains logo and navigation links -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="img/BadPandaRectLogo.png" alt="" class="logo-rectangular img-fluid" >
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- The Navbar was darkened in the faqstyles.css file. There is documentation there-->
-                <div class="collapse navbar-collapse " id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-dark" href="index.html">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                              <!-- All anchor classes have been given the text-dark class To be seen when toggled-->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="artists.html">Artists</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="matcher.html">Matcher</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="news.html">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+    <!-- Jumbotron header that contains business logo and tag line -->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <a href="index.html"> <img src="img/BadPandaRectLogo.png" alt="" class="logo-rectangular  "></a>
+                </div>
+                <div class="col align-self-center" >
+                    <h2>The best tattoos in the Pacific Northwest!</h2>
                 </div>
             </div>
-        </nav>    
+        </div>
     </header>
 
-    <div class="container-fluid">
+    <!-- Navigation bar that contains site navigation links -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artists.html">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matcher.html">Matcher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item active" href="#">
+                        <a class="nav-link" href="#">FAQ
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="container">
+<!--    <div class="container-fluid">  -->
         <div class="row row-content">
             <div class="col-12">
                 <h3 class="col-span p-3 m-3">Frequently Asked Questions</h3>
@@ -147,64 +156,65 @@
                 </div>
             </div>
         </div>   
-    </div>
- <!-- Footer section that uses logo,menu,contact, social buttons-->
- <div class="pb-0 mb-0 justify-content-center text-light">
-    <footer>
-        <div class="row my-5 justify-content-center py-5">
-            <div class="col-11">
-                <div class="row ">
-                    
-                    <div class="col-xl-6 col-md-4 col-sm-4 col-12  mx-auto">
-                        <img src="img/BadPandaSquareLogo.png" class="logo-square">
-                    </div>
 
-                    <div class="col-xl-3 col-md-4 col-sm-4 col-12">
-                        <h6 class="mb-3 mb-lg-4 text-muted bold-text "><b>MENU</b></h6>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="artists.html">Artists</a></li>
-                            <li><a href="matcher.html">Matcher</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="col-xl-3 col-md-4 col-sm-4 col-12">
-                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>CONTACT</b></h6>
-                        <p class="mb-1"><strong>Bad Panda Tattoo Co.</strong></p>
-                        <p class="mb-1">555 Harbor View St</p>
-                        <p>Tacoma, WA 98402 </p>
+        <!-- Footer section that uses logo,menu,contact, social buttons-->
+        <div class="pb-0 mb-0 justify-content-center text-light">
+            <footer>
+                <div class="row my-5 justify-content-center py-5">
+                    <div class="col-11">
+                        <div class="row ">
+                            
+                            <div class="col-xl-6 col-md-4 col-sm-4 col-12  mx-auto">
+                                <img src="img/BadPandaSquareLogo.png" class="logo-square">
+                            </div>
 
-                        <p>Sun – Sat: 12noon – 9pm</p>
-                        <p><a href="mailto:badpandatattoo@gmail.com">badpandatattoo@gmail.com</a></p>
-                        <p><a href="tel:+12535551000">(253) 555-1000</a></p> 
-                    </div>
+                            <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4 text-muted bold-text "><b>MENU</b></h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="artists.html">Artists</a></li>
+                                    <li><a href="matcher.html">Matcher</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
 
+                            <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>CONTACT</b></h6>
+                                <p class="mb-1"><strong>Bad Panda Tattoo Co.</strong></p>
+                                <p class="mb-1">555 Harbor View St</p>
+                                <p>Tacoma, WA 98402 </p>
+
+                                <p>Sun – Sat: 12noon – 9pm</p>
+                                <p><a href="mailto:badpandatattoo@gmail.com">badpandatattoo@gmail.com</a></p>
+                                <p><a href="tel:+12535551000">(253) 555-1000</a></p> 
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                                <p class="social text-muted mb-0 pb-0 bold-text"> 
+                                    <a class="mx-3" href="http://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a class="mx-3" href="http://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a class="mx-3" href="http://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a class="mx-3" href="http://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                </p>
+                                <small class="rights"><span>&#174;</span> Bad Panda All Rights Reserved.</small>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="row ">
-                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                        <p class="social text-muted mb-0 pb-0 bold-text"> 
-                            <a class="mx-3" href="http://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="mx-3" href="http://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a class="mx-3" href="http://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a class="mx-3" href="http://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                        </p>
-                        <small class="rights"><span>&#174;</span> Bad Panda All Rights Reserved.</small>
-                    </div>
-                    
-                </div>
-            </div>
+            </footer>
         </div>
-    </footer>
-</div>
+    </div>
 
-<!--build"js js/main.js-->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--endbuild-->
+    <!--build"js js/main.js-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--endbuild-->
 </body>
 </html>

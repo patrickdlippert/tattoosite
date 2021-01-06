@@ -44,7 +44,7 @@ body {
   
   .row-noseparator {
     padding: 50px 0 0 0;
-    min-height: 200px; }
+    min-height: 100px; }
   
   
   .logo-rectangular {
@@ -54,7 +54,7 @@ body {
   .logo-square {
     max-height: 200px;
   }
-  
+
   .jumbotron {
     margin: 0;
     padding: 10px;

@@ -23,7 +23,6 @@ form {
 .subheader{
   text-align: center;
 }
-
 .card-body {
   background-color: rgb(86, 105, 134); }
 
@@ -39,7 +38,7 @@ form {
 
 .row-noseparator {
   padding: 50px 0 0 0;
-  min-height: 200px; }
+  min-height: 100px; }
 
 
 .logo-rectangular {

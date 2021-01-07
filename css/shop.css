@@ -2,6 +2,7 @@
 #shopping-panel { 
     background-color: rgb(172, 181, 195);
     border-radius: 5px;
+    margin-top: 50px; /* Align top like other pages */
 }
 
 .product-grid9,.product-grid9 .product-image9{

@@ -62,6 +62,11 @@ form {
   border-top: none;
   padding: 10px; }
 
+  .nav-tabs {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+  }
+
 /* An update in bootstrap 4.5.1 caused the accordion headers to be blue. This cancels that */
 a, a:hover {
   color: inherit;

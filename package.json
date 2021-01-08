@@ -4,9 +4,17 @@
   "description": "This is a website for the fictional tattoo shop Bad Panda",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img && imagemin img/gallery/* -o dist/img/gallery && imagemin img/shopping/* -o dist/img/shopping",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin artists.html -d dist --htmlmin -o dist/artists.html && usemin gallery.html -d dist --htmlmin -o dist/gallery.html && usemin artistgallery.html -d dist --htmlmin -o dist/artistgallery.html && usemin shop.html -d dist --htmlmin -o dist/shop.html && usemin matcher.html -d dist --htmlmin -o dist/matcher.html && usemin FAQ.html -d dist --htmlmin -o dist/FAQ.html && usemin news.html -d dist --htmlmin -o dist/news.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "repository": {
     "type": "git"
@@ -14,13 +22,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "lightbox2": "^2.11.3",
     "popper.js": "^1.16.1"
   }
 }

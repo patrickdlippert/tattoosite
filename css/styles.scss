@@ -1,0 +1,158 @@
+$color-denim: rgb(86, 105, 134);
+$color-med-gray: rgb(172, 181, 195);
+$color-danger-red:#d9534f;
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+h1, h2, h3 {
+  font-family: "Audiowide"; 
+  color: $color-denim;  
+}
+
+header {
+    h2 {
+        font-family: "Yellowtail", sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        color: $color-danger-red;
+    }
+}
+
+/* Mid-point of gradient from white to denim */
+form { 
+  background-color: $color-med-gray;
+  border-radius: 5px;
+}
+
+.subheader{
+  text-align: center;
+}
+.card-body {
+  background-color: $color-denim; 
+}
+
+.navbar {  
+  background-color: $color-denim;  
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.row-noseparator {
+  padding: 50px 0 0 0;
+  min-height: 100px;
+}
+
+
+.logo-rectangular {
+  max-height: 100px;
+}
+
+.logo-square {
+  max-height: 200px;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 10px;
+  background-image: linear-gradient(to right, white, $color-denim); 
+  color: white;
+}
+
+.tab-content {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px;
+}
+
+.nav-tabs {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+/* An update in bootstrap 4.5.1 caused the accordion headers to be blue. This cancels that */
+a, a:hover {
+  color: inherit;
+  text-decoration: none; 
+}
+
+/* Transparent black background for carousel captions to make them more readable */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* White rounded border applied to carousel*/
+.carousel {
+  border: solid white;
+  border-radius: 5px;
+ }
+
+/* Custom style for red pause/play buttons in carousel */
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+/* Extra space between radio button labels */
+.form-check-inline label {
+  margin-right: 10px;
+}
+.form-check-inline {
+  padding-left: 20px;
+}
+
+.photo-gallery {
+  color:#313437;
+  background-color: $color-med-gray;
+  border-radius: 5px;
+}
+
+
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom:0;
+}
+
+.photo-gallery .photos {
+  padding-bottom:20px;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
+
+/* Make the lightbox thumbnails all the same size */
+.photo-gallery img {
+	width: 100%;
+  	height: 400px;
+  	object-fit: cover;
+}

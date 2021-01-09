@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/faqstyles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
@@ -56,6 +56,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="matcher.html">Matcher</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="gallery.html">Style Gallery</a>
+                            <a class="dropdown-item" href="artistgallery.html">Artist Gallery</a>
+                          </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="shop.html">Shop</a>
                     </li>
@@ -75,12 +82,27 @@
         </div>
     </nav>  
 
+    
+
     <div class="container">
+
+
+        <!-- This row has a description area above the artist profiles -->
+        <div class="row row-noseparator align-items-top">
+            <div class="col-sm-6">
+                <h3>Frequently Asked Questions</h3>
+                <p class="text-light">We know there are a lot of questions regarding tattoos, fortunately you are not alone. Below we have gathered some of the most common questions regarding your new tattoo. If you comb through this and don't see your answer, please feel free to reach out to us through the contact
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-fluid border" src="img/questionmark.png">
+            </div>
+        </div>
+
+
+
         <div class="row row-content">
             <div class="col">
-                <h1 class="col-span p-3 m-3">Frequently Asked Questions</h1>
-                    <img class="img-fluid border" src="img/questionmark.png">
-                    <h4 class="text-light text-indent p-4 ">We know there are a lot of questions regarding tattoos, fortunately you are not alone. Below we have gathered some of the most common questions regarding your new tattoo. If you comb through this and don't see your answer, please feel free to reach out to us through the contact.</h4>
                 <div id="accordion">
                     <div class="card">
                         <div role="tab" class="card-header">
@@ -88,7 +110,7 @@
                                 <a class="text-white" data-toggle="collapse" data-target="#q1">Does getting a tattoo hurt? </a>
                             </h4>
                             <div class="collapse show" id="q1" data-parent="#accordion">
-                                <div class="card-body text-white">
+                                <div class="card-body text-white rounded">
                                     <p class="">Pain is really relative. Everyone has a different tolerance for pain. We're not going to kid you, though—it does hurt. Just not that much. Some have compared it to a "hot scratching feeling." But, people would not be returning again and again for tattoo after tattoo if it hurt that bad. Most of us are not into pain, but the beauty of the tattoo and the pride associated with wearing it far outweighs a little pin-stick here and there.</p>
                                 </div>
                             </div>
@@ -100,7 +122,7 @@
                                 <a class="collapsed text-white" data-toggle="collapse" data-target="#q2"> Are tattoos safe?</a>
                             </h4>
                             <div class="collapse" id="q2" data-parent="#accordion">
-                                <div class="card-body text-white">
+                                <div class="card-body text-white rounded">
                                     <p class="">As long as you go to a reputable artist that is following all recommended safety precautions, getting a tattoo is perfectly safe.<strong>Make sure you're fully honest about any medical conditions.</strong></p>
                                 </div>
                             </div>
@@ -112,7 +134,7 @@
                                 <a class="collapsed text-white" data-toggle="collapse" data-target="#q3">Can I get a tattoo while sick? </a>
                             </h4>
                             <div class="collapse" id="q3" data-parent="#accordion">
-                                <div class="card-body text-white">
+                                <div class="card-body text-white rounded">
                                     <p class="">Getting a tattoo when your immune system isn't at 100% isn't a good idea. You're going to need your strength and your white blood cells to heal your tattoo, something your body won't be able to do if it's already doing battle against virus and bacteria. Not to mention the fact that it's very inconsiderate to bring your illness into the tattoo studio and risk passing the germs onto others, particularly your artist. If you have an appointment, call and reschedule for when you're feeling well again.</p>
                                 </div>
                             </div>
@@ -123,8 +145,8 @@
                             <h4>
                                 <a  class="collapsed text-white" data-toggle="collapse"data-target="#q4">Can I shave after getting a leg tattoo?</a>
                             </h4>
-                            <div class="collapse" id="q4">
-                                <div class="card-body text-white" id="q4" data-parent="#accordion">
+                            <div class="collapse" id="q4" data-parent="#accordion">
+                                <div class="card-body text-white rounded" >
                                     <p class="">It will take some time for your skin to heal enough for you to shave again and it can vary from person to person.</p>
                                 </div>
                             </div>
@@ -136,7 +158,7 @@
                                 <a class="text-white" data-toggle="collapse" data-target="#q5">Who should not get a tattoo? </a>
                             </h4>
                             <div class="collapse " id="q5" data-parent="#accordion">
-                                <div class="card-body text-white">
+                                <div class="card-body text-white rounded">
                                     <p class="">It is not advisable to get a tattoo if your immune system is compromised in any way; if you’re pregnant or breastfeeding; if you have severe allergies; if you have a communicable disease; if you are taking certain medications such as blood thinners, or if you are under the influence of drugs or alcohol.</p>
                                 </div>
                             </div>
@@ -148,7 +170,7 @@
                                 <a class="text-white" data-toggle="collapse" data-target="#q6">Should I tip my artist? </a>
                             </h4>
                             <div class="collapse " id="q6" data-parent="#accordion">
-                                <div class="card-body text-white">
+                                <div class="card-body text-white rounded">
                                     <p class="">Our artists always appreciate tips for great work and excellent service. </p>
                                 </div>
                             </div>
@@ -165,16 +187,17 @@
                     <div class="col-11">
                         <div class="row ">
                             
-                            <div class="col-xl-6 col-md-4 col-sm-4 col-12  mx-auto">
+                            <div class="col-xl-6 col-md-4 col-sm-5 col-12 mx-auto">
                                 <img src="img/BadPandaSquareLogo.png" class="logo-square">
                             </div>
 
-                            <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                            <div class="col-xl-3 col-md-4 col-sm-3 col-12">
                                 <h6 class="mb-3 mb-lg-4 text-muted bold-text "><b>MENU</b></h6>
                                 <ul class="list-unstyled">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="artists.html">Artists</a></li>
                                     <li><a href="matcher.html">Matcher</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="shop.html">Shop</a></li>
                                     <li><a href="news.html">News</a></li>
                                     <li><a href="FAQ.html">FAQ</a></li>

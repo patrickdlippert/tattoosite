@@ -34,7 +34,6 @@ form {
 
 .card-header{
   background-color: black;
-  text-color: rgb(86, 105, 134); 
 }
 
 .card-body {
@@ -174,7 +173,7 @@ a, a:hover {
 }
 
 #shopping-panel { 
-  background-color: rgb(172, 181, 195);
+  background-color: $color-med-gray;
   border-radius: 5px;
   margin-top: 50px; /* Align top like other pages */
 }
